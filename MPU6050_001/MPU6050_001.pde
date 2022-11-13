@@ -308,7 +308,7 @@ void serialEvent(Serial myPort) {
     // カンマ区切りで配列に代入
     float val[] = float(split(RxData,','));
     
-    // 配列が3個の場合のみ最終変数(valx,valy,valz)に代入
+    // 配列が6個の場合のみ最終変数(valx,valy,valz,valgx,valgy,valgz)に代入
     if(val.length == 6){
       valax = val[0];
       valay = val[1];
